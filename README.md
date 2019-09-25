@@ -1,5 +1,5 @@
 # AndroidMVVMRxJava
-A Simple App that has CRUD function using android local database and RxJava2 to do manage multi threading, and also supported with one of the most popular design pattern.
+A Simple App that has CRUD function using android local database and RxJava2 to manage multi threading and background task, and also supported with one of the most popular design pattern.
 
 Tech Stack :
 - AndroidX
