@@ -6,5 +6,5 @@ Tech Stack :
 - Kotlin
 - MVVM (Model View View Model)
 - Android Architecture Component (Room, View Model, Live Data)
-- RxJava
+- RxJava2
 - Koin (Dependency Injection)
