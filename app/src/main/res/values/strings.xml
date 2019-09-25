@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AndroidMVVMRxJava</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_clear_data">Clear data</string>
+    <string name="search_product">Find product</string>
+    <string name="data_not_found">Data not found</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="search_note">* Find product by the name or price.</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Product Price</string>
+    <string name="product_name_blank">Product name is required</string>
+    <string name="price_blank">Product price is required</string>
+    <string name="price_zero">Product price should be greather than zero</string>
+    <string name="delete_question">Are you sure want to delete this product ?</string>
+    <string name="delete_all_question">Are you sure want to clear the data ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_data">Data not found.</string>
+</resources>
