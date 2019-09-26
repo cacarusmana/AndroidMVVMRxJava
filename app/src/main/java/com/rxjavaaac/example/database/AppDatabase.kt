@@ -7,6 +7,10 @@ import androidx.room.TypeConverters
 import com.rxjavaaac.example.model.Converters
 import com.rxjavaaac.example.model.TProduct
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
+
 @Database(entities = [TProduct::class], version = AppDatabase.DB_VERSION, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {

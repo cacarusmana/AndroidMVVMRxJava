@@ -7,7 +7,10 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-open class BaseActivity() : AppCompatActivity() {
+/**
+ * @author caca rusmana on 2019-09-26
+ */
+open class BaseActivity : AppCompatActivity() {
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
         if (event.action == MotionEvent.ACTION_DOWN) {

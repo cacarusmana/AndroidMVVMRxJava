@@ -8,6 +8,9 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 
 val databaseModule = module {
 

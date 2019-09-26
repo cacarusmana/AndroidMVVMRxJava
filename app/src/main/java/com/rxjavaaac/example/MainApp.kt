@@ -6,6 +6,9 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 class MainApp : Application() {
 
     override fun onCreate() {

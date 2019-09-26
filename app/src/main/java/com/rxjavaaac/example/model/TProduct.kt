@@ -6,7 +6,11 @@ import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 import java.math.BigDecimal
 
-@Entity()
+/**
+ * @author caca rusmana on 2019-09-26
+ */
+
+@Entity
 @Parcelize
 data class TProduct(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,

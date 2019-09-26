@@ -20,6 +20,10 @@ import kotlinx.android.synthetic.main.content_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.math.BigDecimal
 
+
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 class MainActivity : BaseActivity() {
 
     companion object {
@@ -53,10 +57,11 @@ class MainActivity : BaseActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = mainAdapter
         }
+
     }
 
     private fun initListener() {
-        etSearch.onChange { mainViewModel.findProducts(it) }
+        etSearch.onChange { mainViewModel.getProducts(it) }
 
         fab.setOnClickListener {
             nextActivity(requestCode = INSERT_CODE)

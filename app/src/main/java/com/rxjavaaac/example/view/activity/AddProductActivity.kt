@@ -13,6 +13,9 @@ import com.rxjavaaac.example.util.value
 import kotlinx.android.synthetic.main.activity_add_product.*
 import java.math.BigDecimal
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 class AddProductActivity : BaseActivity() {
 
     private lateinit var product: TProduct

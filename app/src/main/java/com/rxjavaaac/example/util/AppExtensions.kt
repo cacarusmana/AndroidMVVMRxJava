@@ -11,6 +11,9 @@ import kotlinx.android.synthetic.main.bottom_sheet_confirmation_dialog.*
 import java.math.BigDecimal
 import java.text.DecimalFormat
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 
 fun View.visible() {
     visibility = View.VISIBLE
@@ -53,10 +56,10 @@ fun Context.bottomSheetConfirmationDialog(message: String, yesListener: () -> Un
 
         btnYes.setOnClickListener {
             yesListener()
-            hide()
+            dismiss()
         }
 
-        btnNo.setOnClickListener { hide() }
+        btnNo.setOnClickListener { dismiss() }
 
         show()
     }

@@ -11,6 +11,9 @@ import com.rxjavaaac.example.util.toCurr
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.product_item_list.*
 
+/**
+ * @author caca rusmana on 2019-09-26
+ */
 class MainAdapter(
     private val context: Context,
     private var productList: MutableList<TProduct>,

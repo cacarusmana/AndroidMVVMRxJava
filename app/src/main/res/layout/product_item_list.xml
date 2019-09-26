@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="vertical"
-        android:paddingBottom="0dp"
-        android:paddingEnd="10dp"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:background="?attr/selectableItemBackground">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:background="?attr/selectableItemBackground">
 
 
     <LinearLayout android:layout_width="match_parent"
@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/circle_bg"
-                android:text="P"
+                tools:text="P"
                 android:textSize="22sp"
                 android:textColor="@android:color/white"
                 android:gravity="center"
@@ -33,7 +33,7 @@
                     android:id="@+id/tvProductName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Product Name"
+                    tools:text="Product Name"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"/>
 
@@ -41,7 +41,7 @@
                     android:id="@+id/tvPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="IDR 25.000"
+                    tools:text="IDR 25.000"
                     android:textColor="@color/textColor"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
