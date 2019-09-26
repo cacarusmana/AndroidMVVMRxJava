@@ -8,9 +8,6 @@ import com.rxjavaaac.example.repository.ProductRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-import kotlinx.coroutines.*
-import timber.log.Timber
-import kotlin.coroutines.CoroutineContext
 
 class MainViewModel(private val productRepository: ProductRepository) : ViewModel() {
 
@@ -27,6 +24,7 @@ class MainViewModel(private val productRepository: ProductRepository) : ViewMode
     }
 
     private fun initData() {
+        // this method will init 1000 records data
         disposable.add(productRepository.initData()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
@@ -36,7 +34,9 @@ class MainViewModel(private val productRepository: ProductRepository) : ViewMode
     fun findProducts(value: String = "") {
         loadingState.value = View.VISIBLE
 
-        disposable.add((if (value == "") productRepository.getAll() else productRepository.findProducts(value))
+        disposable.add((if (value == "") productRepository.getAll() else productRepository.findProducts(
+            value
+        ))
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { items ->
